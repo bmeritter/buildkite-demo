@@ -1,13 +1,13 @@
 steps:
 
   - name: ":eslint: Lint"
-    command: auto/lint
+    command: "npm run lint"
     agents:
       queue: default
 
   - wait
 
   - name: ":jest: Test"
-    command: auto/test
+    command: "npm run test"
     agents:
       queue: default
