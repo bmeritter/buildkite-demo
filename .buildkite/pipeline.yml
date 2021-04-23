@@ -1,11 +1,4 @@
 steps:
-  - name: ':mag_right: NPM Audit Plugin'
-    plugins:
-      ssh://git@git.realestate.com.au/buildkite-plugin/npm-audit-buildkite-plugin#0.19: ~
-    agents:
-      queue: hometrack:build
-
-  - wait
 
   - name: ":eslint: Lint"
     command: auto/lint
