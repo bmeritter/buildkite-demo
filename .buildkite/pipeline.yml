@@ -4,7 +4,7 @@ steps:
     agents:
       queue: default
     plugins:
-      - docker-compose#v3.7.0:
+      - docker-compose:
           run: app
 
   - wait
