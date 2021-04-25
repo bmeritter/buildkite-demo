@@ -1,14 +1,4 @@
 steps:
-  - name: "nvm"
-    command: "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash"
-
-  - wait
-
-  - name: "node"
-    command: "nvm install"
-
-  - wait
-
   - name: ":eslint: Lint"
     command: "npm run lint"
     agents:
