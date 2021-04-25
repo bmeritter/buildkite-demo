@@ -1,4 +1,8 @@
 steps:
+  - name: "nvm"
+    command: "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash"
+
+  - wait  
 
   - name: ":eslint: Lint"
     command: "script/test.sh"
