@@ -4,10 +4,8 @@ steps:
     agents:
       queue: default
     plugins:
-      - docker#v3.8.0:
-          image: "node"
-          always-pull: true
-          propagate-aws-auth-tokens: true
+      - docker-compose#v3.7.0:
+          run: app
 
   - wait
 
