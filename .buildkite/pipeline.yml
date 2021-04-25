@@ -1,7 +1,7 @@
 steps:
 
   - name: ":eslint: Lint"
-    command: "npm run lint"
+    command: "script/test.sh"
     agents:
       queue: default
 
